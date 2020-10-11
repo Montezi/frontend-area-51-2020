@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 60px;
   position: fixed;
   bottom: 0;
+  z-index: 1;
   svg {
     color: #FFF;
     cursor: pointer;
@@ -20,7 +21,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 48%;
+  width: 60%;
   padding: 15px 25px;
 `;
 
