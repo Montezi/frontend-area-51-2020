@@ -35,7 +35,7 @@ function Signup() {
           <Button onClick={()=> history.push("/home")} name="CADASTRAR-SE" />
         </S.Form>
         <S.ContainerButtons>
-          <S.LinkLogin to="/">Já é cadastrado? Acesse aqui</S.LinkLogin>
+          <S.LinkLogin to="/Login">Já é cadastrado? Acesse aqui</S.LinkLogin>
           <ButtonIcon source={facebook} value="Cadastrar-se com o facebook" />
           <ButtonIcon source={google} value="Cadastrar-se com o gmail" />
           <S.TextQuestion>
