@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3333", // substituir pela URL da API
+  baseURL: "https://in-kasa-hackinrio.herokuapp.com/api/",
 });
 
 export default api;
