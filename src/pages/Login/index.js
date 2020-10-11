@@ -8,34 +8,32 @@ import ButtonIcon from "../../components/ButtonIcon";
 import facebook from "../../assets/facebook.svg";
 import google from "../../assets/google.svg";
 
-function Signup() {
+function Login() {
   return (
     <S.Container>
       <S.ContainerHeader>
         <S.ImageLogo src={Logo} />
-        <S.Title>CADASTRAR</S.Title>
+        <S.Title>ACESSAR</S.Title>
       </S.ContainerHeader>
       <S.FormContainer>
         <S.Form>
-          <Input placeholder="Nome" name="name" />
           <Input placeholder="E-mail" name="email" />
+          <Input placeholder="Senha" name="password" type="password" />
           <S.Term>
-            <S.Checkbox name="termo" />
-            <S.Text left="6px">
-              Aceito o <S.LinkTerm href="#">termo de utilização</S.LinkTerm>
-            </S.Text>
+            <S.Remember>
+              <S.Checkbox name="remember" />
+              <S.Text left="6px">Lembre-me</S.Text>
+            </S.Remember>
+            <S.LinkForgot>Esqueceu sua senha?</S.LinkForgot>
           </S.Term>
-          <S.Text left="20px">
-            Uma senha de acesso será enviada para seu e-mail
-          </S.Text>
-          <Button name="CADASTRAR-SE" />
+
+          <Button name="ENTRAR" />
         </S.Form>
         <S.ContainerButtons>
-          <S.LinkLogin to="/Login">Já é cadastrado? Acesse aqui</S.LinkLogin>
-          <ButtonIcon source={facebook} value="Cadastrar-se com o facebook" />
-          <ButtonIcon source={google} value="Cadastrar-se com o gmail" />
+          <ButtonIcon source={facebook} value="Entrar com o facebook" />
+          <ButtonIcon source={google} value="Entrar com o gmail" />
           <S.TextQuestion>
-            Está com dúvidas? <S.LinkTerm href="#">Saiba mais</S.LinkTerm>
+            Novo por aqui? <S.LinkTerm to="/SignUp">Cadastre-se</S.LinkTerm>
           </S.TextQuestion>
         </S.ContainerButtons>
       </S.FormContainer>
@@ -43,4 +41,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Login;
