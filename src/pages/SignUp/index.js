@@ -7,8 +7,12 @@ import Button from "../../components/Button";
 import ButtonIcon from "../../components/ButtonIcon";
 import facebook from "../../assets/facebook.svg";
 import google from "../../assets/google.svg";
+import { useHistory } from "react-router-dom";
 
 function Signup() {
+
+  const history = useHistory();
+
   return (
     <S.Container>
       <S.ContainerHeader>
@@ -28,7 +32,7 @@ function Signup() {
           <S.Text left="20px">
             Uma senha de acesso será enviada para seu e-mail
           </S.Text>
-          <Button name="CADASTRAR-SE" />
+          <Button onClick={()=> history.push("/home")} name="CADASTRAR-SE" />
         </S.Form>
         <S.ContainerButtons>
           <S.LinkLogin to="/">Já é cadastrado? Acesse aqui</S.LinkLogin>

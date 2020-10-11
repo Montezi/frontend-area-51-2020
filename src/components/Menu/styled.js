@@ -3,7 +3,7 @@ import Close from '@material-ui/icons/Close';
 
 export const Container = styled.div`
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: ${(props) => (props.show ? 0 : "-100%")};
   overflow: hidden;
@@ -12,6 +12,7 @@ export const Container = styled.div`
   background-color: #101f3988;
   backdrop-filter: blur(4px);
   max-width: 375px;
+  z-index: 1;
 `;
 
 export const Content = styled.div`
