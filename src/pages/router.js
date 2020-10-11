@@ -4,7 +4,7 @@ import { Home, SignUp, Login } from "./";
 
 const Routes = () => (
   <Switch>
-    <Route path="/" exact component={Login} />
+    <Route path="/Login" component={Login} />
     <Route path="/SignUp" component={SignUp} />
     <Route path="/home" component={Home} />
   </Switch>

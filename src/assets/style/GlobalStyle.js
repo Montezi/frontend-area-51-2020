@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face{
       font-family:"Kohinoor";
-      src:url("../fonts/Kohinoor.ttc")
+      src:url("../fonts/Kohinoor.ttc")format('ttc')
   };
 
   *{

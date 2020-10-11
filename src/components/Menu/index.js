@@ -40,7 +40,7 @@ function Menu({ show, setShow }) {
             <NotificationImportantIcon />
             <p>Informações</p>
           </S.Item>
-          <S.Item onClick={() => history.push("/")}>
+          <S.Item onClick={() => history.push("/Login")}>
             <KeyboardReturnIcon />
             <p>Sair</p>
           </S.Item>
