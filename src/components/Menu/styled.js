@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Close from '@material-ui/icons/Close';
+import Close from "@material-ui/icons/Close";
 
 export const Container = styled.div`
   display: flex;
@@ -68,7 +68,7 @@ export const Item = styled.li`
   svg {
     color: ${(props) => props.theme.palette.primary};
   }
-  
+
   p {
     margin: 0;
     margin-left: 30px;
@@ -93,5 +93,5 @@ export const CloseIcon = styled(Close)`
   position: absolute;
   bottom: 25px;
   left: 65%;
-  color:${(props=> props.theme.palette.secondary)};
+  color: ${(props) => props.theme.palette.secondary};
 `;

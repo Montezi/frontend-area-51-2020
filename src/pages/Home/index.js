@@ -1,41 +1,35 @@
 import React from "react";
 
-
-import VisibilityIcon from '@material-ui/icons/Visibility';
-import ShareIcon from '@material-ui/icons/Share';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import ShareIcon from "@material-ui/icons/Share";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
 import { images } from "./images";
 import logo from "../../assets/images/logo.png";
 
-
 import * as S from "./styled";
 import TabBar from "../../components/TabBar";
 
-const Actions = ( ) => {
-  return ( 
+const Actions = () => {
+  return (
     <S.Actions>
-      <VisibilityIcon/>
-      <ShareIcon/>
-      <FavoriteIcon/>
+      <VisibilityIcon />
+      <ShareIcon />
+      <FavoriteIcon />
     </S.Actions>
-  )
-}
-
+  );
+};
 
 function Home() {
-
   const calcWidth = (index) => {
     let pos = index % 6;
-    
-    if(pos < 1) {
-      return "352px"
-    }
-    else if ( pos > 3 && pos <= 6){
-      return " 170px"
-    }
-    else {
-      return "110px"
+
+    if (pos < 1) {
+      return "352px";
+    } else if (pos > 3 && pos <= 6) {
+      return " 170px";
+    } else {
+      return "110px";
     }
   };
 
@@ -49,14 +43,14 @@ function Home() {
         </S.Text>
         <S.Content>
           {images.map((res, index) => (
-            <div>
-              <Actions/>
+            <div key={index}>
+              <Actions />
               <S.Locations width={calcWidth(index)} src={res.url} alt="" />
             </div>
           ))}
         </S.Content>
       </S.Header>
-      <TabBar/>
+      <TabBar />
     </S.Container>
   );
 }

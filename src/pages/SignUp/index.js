@@ -10,7 +10,6 @@ import google from "../../assets/google.svg";
 import { useHistory } from "react-router-dom";
 
 function Signup() {
-
   const history = useHistory();
 
   return (
@@ -32,10 +31,10 @@ function Signup() {
           <S.Text left="20px">
             Uma senha de acesso será enviada para seu e-mail
           </S.Text>
-          <Button onClick={()=> history.push("/home")} name="CADASTRAR-SE" />
+          <Button onClick={() => history.push("/home")} name="CADASTRAR-SE" />
         </S.Form>
         <S.ContainerButtons>
-          <S.LinkLogin to="/Login">Já é cadastrado? Acesse aqui</S.LinkLogin>
+          <S.LinkLogin to="/">Já é cadastrado? Acesse aqui</S.LinkLogin>
           <ButtonIcon source={facebook} value="Cadastrar-se com o facebook" />
           <ButtonIcon source={google} value="Cadastrar-se com o gmail" />
           <S.TextQuestion>

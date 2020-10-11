@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import * as S from "./styles";
 import Logo from "../../assets/logo.png";
@@ -9,6 +10,7 @@ import facebook from "../../assets/facebook.svg";
 import google from "../../assets/google.svg";
 
 function Login() {
+  const history = useHistory();
   return (
     <S.Container>
       <S.ContainerHeader>
@@ -27,7 +29,7 @@ function Login() {
             <S.LinkForgot>Esqueceu sua senha?</S.LinkForgot>
           </S.Term>
 
-          <Button name="ENTRAR" />
+          <Button name="ENTRAR" onClick={() => history.push("/home")} />
         </S.Form>
         <S.ContainerButtons>
           <ButtonIcon source={facebook} value="Entrar com o facebook" />
