@@ -1,9 +1,36 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  body {
-    padding: 0;
-    margin: 0;
-    max-width: 375px;
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  @font-face{
+      font-family:"Kohinoor";
+      src:url("../fonts/Kohinoor.ttc")
+  };
+
+  *{
+     margin:0;
+     padding:0;
+     outline:0;
+     box-sizing: border-box;
+   }
+   *:focus{
+     outline:0;
+   }
+   html,body, #root{
+     height: 100%;
+   }
+   body{
+     -webkit-font-smoothing:antialiased;
+   }
+ 
+   a{
+     text-decoration:none;
+   }
+   ul{
+     list-style:none;
+   }
+   button{
+     cursor: pointer;
+   }
 `;
